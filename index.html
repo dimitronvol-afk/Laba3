@@ -1,0 +1,69 @@
+        <!-- БЛОК ЛАБОРАТОРНОЇ РОБОТИ №3 (Варіант 1) -->
+        <div class="feedback-form-section">
+            <h3>Анкета фаната гурту (Лабораторна робота 3)</h3>
+            <p class="form-instruction">Будь ласка, заповніть інформацію про себе, щоб долучитися до фан-клубу:</p>
+            
+            <form action="#" method="post" class="fan-form">
+                <!-- Прізвище (Просте текстове введення) -->
+                <div class="form-group">
+                    <label for="user-lastname">Прізвище:</label>
+                    <input type="text" id="user-lastname" name="lastname" required placeholder="Введіть прізвище">
+                </div>
+
+                <!-- Ім’я (Просте текстове введення) -->
+                <div class="form-group">
+                    <label for="user-firstname">Ім’я:</label>
+                    <input type="text" id="user-firstname" name="firstname" required placeholder="Введіть ім'я">
+                </div>
+
+                <!-- По батькові (Просте текстове введення) -->
+                <div class="form-group">
+                    <label for="user-middlename">По батькові:</label>
+                    <input type="text" id="user-middlename" name="middlename" placeholder="Введіть по батькові">
+                </div>
+
+                <!-- Вік (Вибір з варіантів через список select) -->
+                <div class="form-group">
+                    <label for="user-age">Ваш вік:</label>
+                    <select id="user-age" name="age">
+                        <option value="under-7">до 7</option>
+                        <option value="7-17">від 7 до 17</option>
+                        <option value="17-33" selected>від 17 до 33</option>
+                        <option value="33-65">від 33 до 65</option>
+                        <option value="above-65">65 і старше</option>
+                    </select>
+                </div>
+
+                <!-- Стать (Радіокнопки - radio) -->
+                <div class="form-group inline-group">
+                    <span class="group-label">Стать:</span>
+                    <div class="radio-options">
+                        <input type="radio" id="gender-male" name="gender" value="male" checked>
+                        <label for="gender-male">Чоловіча</label>
+                        
+                        <input type="radio" id="gender-female" name="gender" value="female">
+                        <label for="gender-female">Жіноча</label>
+                    </div>
+                </div>
+
+                <!-- Статус (Чек-бокси - checkbox) -->
+                <div class="form-group inline-group">
+                    <span class="group-label">Ваш статус:</span>
+                    <div class="checkbox-options">
+                        <input type="checkbox" id="status-student" name="status" value="student">
+                        <label for="status-student">Студент</label>
+
+                        <input type="checkbox" id="status-worker" name="status" value="worker">
+                        <label for="status-worker">Працюючий</label>
+
+                        <input type="checkbox" id="status-retiree" name="status" value="retiree">
+                        <label for="status-retiree">Пенсіонер</label>
+                    </div>
+                </div>
+
+                <!-- Кнопка відправки форми -->
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">Надіслати анкету</button>
+                </div>
+            </form>
+        </div>
