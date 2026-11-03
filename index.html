@@ -1,0 +1,54 @@
+        <!-- БЛОК ЛАБОРАТОРНОЇ РОБОТИ №3 (Варіант 2) -->
+        <div class="address-form-box">
+            <h3>Форма введення адреси доставки (Лабораторна робота 3)</h3>
+            <p class="form-instruction">Будь ласка, вкажіть вашу адресу для доставки мерчу чи квитків:</p>
+            
+            <form action="#" method="post" class="fan-form">
+                <!-- Країна -->
+                <div class="form-group">
+                    <label for="user-country">Країна:</label>
+                    <select id="user-country" name="country">
+                        <option value="UK">Велика Британія</option>
+                        <option value="UA" selected>Україна</option>
+                        <option value="US">США</option>
+                        <option value="DE">Німеччина</option>
+                        <option value="PL">Польща</option>
+                    </select>
+                </div>
+
+                <!-- Поштовий індекс -->
+                <div class="form-group">
+                    <label for="user-zip">Поштовий індекс:</label>
+                    <input type="text" id="user-zip" name="zipcode" required maxlength="6" placeholder="Наприклад, 36000" pattern="[0-9]{5,6}">
+                </div>
+
+                <!-- Місто -->
+                <div class="form-group">
+                    <label for="user-city">Місто:</label>
+                    <input type="text" id="user-city" name="city" required placeholder="Введіть ваше місто">
+                </div>
+
+                <!-- Вулиця, номер будинку -->
+                <div class="form-group">
+                    <label for="user-street">Вулиця, номер будинку:</label>
+                    <input type="text" id="user-street" name="street" required placeholder="вул. Металістів, буд. 12, кв. 5">
+                </div>
+
+                <!-- Вказівка на те, що адреса службова/домашня -->
+                <div class="form-group inline-group">
+                    <span class="group-label">Тип адреси:</span>
+                    <div class="radio-options">
+                        <input type="radio" id="type-home" name="address_type" value="home" checked>
+                        <label for="type-home">Домашня</label>
+                        
+                        <input type="radio" id="type-work" name="address_type" value="work">
+                        <label for="type-work">Службова</label>
+                    </div>
+                </div>
+
+                <!-- Кнопка відправки -->
+                <div class="form-submit">
+                    <button type="submit" class="submit-btn">Зберегти адресу</button>
+                </div>
+            </form>
+        </div>
